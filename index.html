@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Тест по повести «Ася»</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="hero">
+    <div class="badge">Литература • И. С. Тургенев</div>
+    <h1>Тест по жизни и творчеству<br>И. С. Тургенева и повести «Ася»</h1>
+    <p>15 вопросов • один правильный ответ</p>
+  </header>
+
+  <section id="start" class="card">
+    <h2>Перед началом</h2>
+    <p class="muted">Введите имя и фамилию. После отправки теста вы увидите свой результат и разбор каждого ответа.</p>
+    <label>Имя</label><input id="firstName" placeholder="Например, Иван" autocomplete="given-name">
+    <label>Фамилия</label><input id="lastName" placeholder="Например, Иванов" autocomplete="family-name">
+    <button id="startBtn" class="primary">Начать тест</button>
+    <p id="startError" class="error"></p>
+  </section>
+
+  <section id="quiz" class="hidden">
+    <div class="quizTop"><span id="counter"></span><span id="progressText"></span></div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div id="questions"></div>
+    <button id="submitBtn" class="primary submit">Завершить тест</button>
+    <p id="quizError" class="error"></p>
+  </section>
+
+  <section id="result" class="hidden"></section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
